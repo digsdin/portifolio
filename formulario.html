@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Orçamento</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <div class="contato-container">
+    <legend>Orçamento & Mensagens</legend>
+
+    <form action="processa_formulario.php" method="POST" class="formulario">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+      <label for="assunto">Assunto:</label>
+      <select name="assunto" id="assunto" required>
+        <option value="">Selecione</option>
+        <option value="orçamento">Orçamento</option>
+        <option value="outros">Outros</option>
+      </select>
+
+      <label for="msg">Mensagem:</label>
+      <textarea name="message" id="msg" rows="5" placeholder="Descreva sua solicitação..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
