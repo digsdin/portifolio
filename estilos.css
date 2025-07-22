@@ -14,6 +14,9 @@ body {
   padding: 20px;
   text-align: center;
 }
+img {
+  size-adjust: 20px;
+}
 
 /* ====== CONTAINER COM GLASS EFFECT ====== */
 .contato-container {
@@ -150,4 +153,17 @@ article p {
   .formulario button {
     font-size: 1rem;
   }
+}
+
+/* ===== Aba Sobre ==== */
+
+.sobre-body {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 60px auto;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
 }
