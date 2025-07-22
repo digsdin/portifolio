@@ -1,0 +1,1 @@
+alert("Olá, bem vindo ao meu site, criado com carinho para te contar um pouco sobre mim e meus projetos, espero que goste.");
