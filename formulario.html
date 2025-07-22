@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulário de Orçamento</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estyleform.css">
+  <title>Formulario</title>
 </head>
 <body>
-
-  <div class="contato-container">
-    <legend>Orçamento & Mensagens</legend>
-
-    <form action="processa_formulario.php" method="POST" class="formulario">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
-
-      <label for="assunto">Assunto:</label>
-      <select name="assunto" id="assunto" required>
-        <option value="">Selecione</option>
-        <option value="orçamento">Orçamento</option>
-        <option value="outros">Outros</option>
-      </select>
-
-      <label for="msg">Mensagem:</label>
-      <textarea name="message" id="msg" rows="5" placeholder="Descreva sua solicitação..." required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-    <footer>
+  <section>
+    <h2>Contato</h2>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <label Nome>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+        <label Email>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+        <input type="hidden" name="apiKey" value="sf_9mc8dhb53jh9elalifi084ei">
+        <input type="hidden" name="redirectTo" value="obrigado.html">
+      </form>
+      <footer>
+    <link rel="stylesheet" href="estilos.css">
       <br><a href="index.html">Voltar</a>
       <br><p>&copy;   2025 DigsWare - Todos os direitos reservados.</p>
             <p>Conecte-se comigo.</p>
             <a href="https://www.linkedin.com/in/diego-lima-da-silva-b068b2112/">Linkedin</a> |
             <a href="https://github.com/digsdin">GitHub</a>
     </footer>
-  </div>
-
-</body>
+    </section>
+    
+  </body>
 </html>
