@@ -14,8 +14,23 @@ body {
   padding: 20px;
   text-align: center;
 }
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+nav ul li:hover {
+  color: #05b88e;
+}
 img {
-  size-adjust: 20px;
+  size-adjust: 10px;
+}
+.logo {
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
 }
 
 /* ====== CONTAINER COM GLASS EFFECT ====== */
