@@ -27,10 +27,14 @@ img {
   size-adjust: 10px;
 }
 .logo {
-  width: 800px;
+  padding: 10px;
+  width: 100%;
   height: auto;
-  margin: 20px auto;
+  margin: 30px auto;
   display: block;
+  justify-content: center;
+  align-items: center; 
+  scale: 1;
   transition: all 0.3s ease;
 }
 .logo:hover {
