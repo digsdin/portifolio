@@ -31,6 +31,10 @@ img {
   height: auto;
   margin: 20px auto;
   display: block;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
 }
 
 /* ====== CONTAINER COM GLASS EFFECT ====== */
